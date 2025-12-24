@@ -33,6 +33,7 @@ if pdf_file and signature_file:
             page_height = page.rect.height
 
             # Bottom-right placement with margin
+            page_rect = page.bound()
             margin = 20
             x1 = page_width - signature_width - margin
             y1 = page_height - sig_height - margin
